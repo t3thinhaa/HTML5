@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5-1</title>
+    <style>
+        #line1::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+        #line2::first-line{
+            color: blue;
+        }
+        a {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ví dụ về cá hình thức trình bày trong CSS (CSS pseudo-elements)</h1>
+    <p id="line1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Vel veritatis architecto itaque consequuntur, eveniet neque eum
+        obcaecati animi at aspernatur earum labore ratione tenetur
+        in amet quaerat exercitationem iste mollitia.</p>
+    <p id="line2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Id autem cupiditate modi atque incidunt consectetur accusantium maiores sint repellendus aut aperiam,
+        tempore a inventore deleniti reiciendis animi aspernatur velit harum. Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Eligendi ea aliquid saepe nam voluptas recusandae error? 
+        Delectus mollitia nostrum nesciunt cumque sed quia. Illo dignissimos vel quasi delectus perferendis eius.</p>
+
+    <br>
+    <p id="line2" ></p>
+    <h2>The following properties apply ti the ::first-letter pseudo-element:</h2>
+    <ul class="ul1">
+        <li>font properties</li>
+        <li>color properties</li>
+        <li>background properties</li>
+        <li>margin properties</li>
+        <li>border properties</li>
+        <li>text-decoration</li>
+        <li>vertical-align (only if "float" is "none"</li>
+        <li>text-transform</li>
+        <li>line-height</li>
+        <li>float</li>
+        <li>clear</li>
+    </ul>
+    <h2>The following properties apply ti the ::first-line pseudo-element:</h2>
+    <ul>
+        <li>font properties</li>
+        <li>color properties</li>
+        <li>background properties</li>
+        <li>word-spacing</li>
+        <li>letter-spacing</li>
+        <li>text-decoration</li>
+        <li>vertical-align</li>
+        <li>text-transform</li>
+        <li>line-height</li>
+        <li>clear</li>
+    </ul>
+    <a href="#">Visit here to see more details</a>
+</body>
+</html>

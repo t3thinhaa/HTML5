@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        .tron {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 15px solid red;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: circle 2s infinite forwards;
+        }
+        @keyframes circle {
+            0% {border-color: red; transform: scale(1);}
+            25% {border-color: aqua; transform: scale(1.1);}
+            50% {border-color:blue; transform: scale(1.3);}
+            75% {border-color: violet; transform: scale(1.1);}
+            100% {border-color: tomato; transform: scale(1);}
+        }
+        .vuong {
+            width: 75px;
+            height: 75px;
+            border: 5px solid limegreen;
+            animation: square 2s infinite ease-in-out alternate-reverse;
+        }
+        @keyframes square {
+            0% { transform: rotate(0deg);}
+            25% {border-color: aqua;}
+            50% {border-color: black;}
+            75% {border-color: chartreuse;}
+            100% {border-color: yellow; transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="tron">
+        <div class="vuong"></div>
+    </div>
+</body>
+</html>
