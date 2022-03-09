@@ -1,6 +1,112 @@
-.weblink {
-    position: relative;
+.container {
+    width: 60%;
+    background-color: bisque;
+    margin: auto;
+    display: block;
+    padding: 15px 40px 15px 40px;
 }
-.weblink::before {
+/* css phần head */
+.header {
+    display: flex;
+    margin-bottom: 10px; ;
+}
+.ima {
+    width: 20%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+.head-right {
+    justify-content: center;
+    margin: 20px;
+}
+.head-right h1 {
+    color: tomato;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.head-right .job {
+    font-size: large;
+    color: gray;
+    font-weight: bolder;
+}
+/* hết phần head */
+
+/* phần content1 */
+.middle-content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+
+}
+.middle-content1 .mid1 {
+    width: 5%;
+    object-fit: cover;
+    margin: auto;
+}
+.middle-content1 .mid2 p {
+    font-size: 12px;
+}
+.mid3 {
+    display: flex;
+}
+.mid3 .icon {
+    width: 5%;
+    object-fit: cover;
+}
+/* hết conten1 */
+/* content2 */
+.mid4 {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    color: #EF8762;
+
+}
+/* left */
+.left {
+    width: 49%;
+}
+.skill_rate {
+    display: flex;
+    margin: 50px 10px;
+}
+.rate {
+    margin-left: 20px;
+}
+.icon-flower {
+    width: 20px;
+}
+/* hết left */
+/* rihgt */
+.right {
+    width: 49%;
+    border-left: 2px solid #EF8762;
+    border-left-style: dashed;
+    padding-left: 20px;
+    justify-content: center;
+}
+/* hết phần right */
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+}
+footer .foot_icon {
+    width: 5%;
+    object-fit: cover;
+    margin: auto;
+    padding: 20px;
     
+}
+.foot {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+.foot .icon {
+    width: 20px;
 }
