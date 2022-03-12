@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 8.3</title>
+    <style>
+        .wrapper {
+            padding: 5%;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .container h1,h4 {
+            color:#878787;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .container .banner{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+        }
+        section .col-5 {
+            width: 50%;
+            text-align: center;
+        }
+        section .col-4 {
+            width: 45%;
+            text-align: center;
+        }
+        section .col-5 img, section .col-4 img{
+            width: 100%;
+        }
+        section .col-5 h4, section .col-4 h4 {
+            color: black;
+        }
+        p {
+            color: gray;
+        }
+
+        @media only screen and (max-width: 480px){
+            section {
+                display: flex;
+                flex-direction: column;
+            }
+            section .col-4, section .col-5 {
+                width: 100%;
+            }
+            .container .col-5 img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>2017: <br>
+                Art Design
+            </h1>
+            <h4>May 25, 2017</h4>
+        </div>
+        <div class="container">
+            <img src="images/img8-33.PNG" class="banner">
+        </div>
+        <section>
+            <div class="col-5">
+                <img src="images/img8-34.PNG" alt="">
+                <h4>Music sound</h4>
+                <p>Lorem ipsum dolor</p>
+                <img src="images/img8-36.PNG" alt="">
+                <h4>Egg</h4>
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="col-4">
+                <h4>Bread</h4>
+                <p>Lorem ipsum</p>
+                <img src="images/img8-35.PNG" alt="">
+                <h4>Tool</h4>
+                <p>Lorem ipsum</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

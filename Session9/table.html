@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table {
+            border-image: url(images/squiggle-border.png.png) ;
+            border-collapse: collapse;
+            border-color: brown;
+            text-align: center;
+            border-radius: -40%;
+        }
+        th,td {
+            width: 50px;
+            height: 40px;
+        }
+        tr:nth-child(even) { 
+            background-color: cadetblue;
+        }
+        td:nth-child(odd)  {
+            background-color: aqua;
+        }
+        tr:nth-child(1) {
+            background-color: black;
+            color: antiquewhite;
+        }
+        tr:hover {
+            transform: scaleX(1.1);
+            border: 2px solid gray;
+            box-shadow: 2px 5px 5px 3px lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>a</th>
+            <th>b</th>
+            <th>c</th>
+            <th>d</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td></td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <th>a</th>
+            <th>a</th>
+            <th>a</th>
+        </tr>
+        <tr>
+            <td rowspan="3">audi</td>
+            <td>a1</td>
+            <td>a2</td>
+        </tr>
+        <tr>
+            <td>a3</td>
+            <td>a4</td>
+        </tr>
+        <tr>
+            <td>a5</td>
+            <td>a6</td>
+        </tr>
+        <tr>
+            <td rowspan="2">bmw</td>
+            <td>a7</td>
+            <td>a8</td>
+        </tr>
+        <tr>
+            <td>a9</td>
+            <td>a10</td>
+        </tr>
+    </table>  
+    <table>
+        <tr>
+            <td>name</td>
+            <td colspan="3">model</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="3">ddd</td>
+            <td>3</td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td colspan="3">a</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>  
+</body>
+</html>

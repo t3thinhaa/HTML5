@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu drop down</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        nav {
+            background-color: rgb(18, 150, 106);
+            padding: 10px 0;
+            position: relative;
+        }
+        ul.menu {
+            list-style-type: none;
+            display: flex;
+        }
+        
+        ul.menu li a {
+            color: antiquewhite;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        ul.menu li a:hover {
+            color: blueviolet;
+        }
+        ul.menu-dropdown {
+            display: none;
+            position: absolute;
+            list-style-type: none;
+            background-color: aquamarine;
+        }
+        ul.menu-dropdown li a:hover {
+            color: brown;
+        }
+        li.dropdown:hover .menu-dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li  class="dropdown"><a href="#">Brand <ion-icon name="caret-down-outline"></ion-icon></a>
+                <ul class="menu-dropdown">
+                    <li><a href="#">Brand 01</a></li>
+                    <li><a href="#">Brand 02</a></li>
+                    <li><a href="#">Brand 03</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
