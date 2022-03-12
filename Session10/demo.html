@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo form</title>
+    <style>
+        body {
+            width: 60%;
+            margin: auto;
+        }
+        fieldset {
+            width: 450px;
+        }
+        form {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            padding: 50px;
+        }
+        h2 {
+            margin: auto;
+            padding: 50px;
+        }
+        .row {
+            display: flex;
+        }
+        .row label {
+            width: 100px;
+        }
+        input,select {
+            margin-bottom: 10px;
+        }
+        .btn {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            <h2>Registration Form</h2>
+        </legend>
+        <form action="http://google.com" method="get">
+            <div class="row">
+                <label>Student Id *</label>
+                <input type="text" placeholder="Input your ID" required>
+            </div>
+            <div class="row">
+                <label>User Name</label>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="row">
+                <label>Password *</label>
+                <input type="password" placeholder="Pass" required>
+            </div>
+            <div class="row">
+                <label>Email</label>
+                <input type="email" >
+            </div>
+            <div class="row">
+                <label>DOB</label>
+                <input type="date">
+            </div>
+            <div class="row">
+                <label>Phone</label>
+                <input type="tel">
+            </div>
+            <div class="row">
+                <label>Fee</label>
+                <input type="number" placeholder="Input fee Number">
+            </div>
+            <div class="row">
+                <label >Course</label>
+                <input type="checkbox"> Java
+                <input type="checkbox"> JDBC
+                <input type="checkbox"> EJB
+                <input type="checkbox"> JSP
+            </div>
+            <div class="row">
+                <label > Gender</label>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </div>
+            <div class="row">
+                <label>Qualification</label>
+                <select >
+                    <option >B.Tech</option>
+                    <option >A.Tech</option>
+                    <option >C.Tech</option>
+                    <option >D.Tech</option>
+                </select>
+            </div>
+            <div class="row">
+                <label>&nbsp;</label>
+                <input class="btn" type="submit" value="OK" onclick="return=false">
+            </div>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
